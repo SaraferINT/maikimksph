@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Quick Guide</title>
+  <title>Guía Rápida</title>
+  <link rel="icon" type="image/png" href="./hard.png">
   <meta name="robots" content="noindex">
   <meta name="theme-color" content="#101319">
   <style>
@@ -370,13 +371,7 @@
       border-radius: 50%;
       flex-shrink: 0;
       align-self: center;
-      display: grid;
-      place-items: center;
-      font-size: 14px;
-      font-weight: 900;
-      color: #4a3600;
-      background: radial-gradient(circle at 35% 30%, #ffe27a, #f5c400 60%, #c99700);
-      box-shadow: 0 3px 10px rgba(245, 196, 0, .35), inset 0 0 0 2px rgba(255, 255, 255, .4);
+      object-fit: contain;
     }
 
     .robux-cantidad {
@@ -521,13 +516,7 @@
       height: 26px;
       border-radius: 50%;
       flex-shrink: 0;
-      display: grid;
-      place-items: center;
-      font-size: 11px;
-      font-weight: 900;
-      color: #4a3600;
-      background: radial-gradient(circle at 35% 30%, #ffe27a, #f5c400 60%, #c99700);
-      box-shadow: inset 0 0 0 2px rgba(255, 255, 255, .45);
+      object-fit: contain;
     }
 
     .robux-hint {
@@ -631,12 +620,7 @@
       height: 22px;
       border-radius: 50%;
       flex-shrink: 0;
-      display: grid;
-      place-items: center;
-      font-size: 10px;
-      font-weight: 900;
-      color: #4a3600;
-      background: radial-gradient(circle at 35% 30%, #ffe27a, #f5c400 60%, #c99700)
+      object-fit: contain;
     }
 
     /* Paso remarcado + aviso "Reclama aqui" */
@@ -745,23 +729,23 @@
 
     <header>
       <!-- ===== PAGE TITLE ===== -->
-      <h1>QUICK GUIDE</h1>
+      <h1>GUÍA RÁPIDA</h1>
       <div class="subtitulo">
-        Copy the link and paste it into Google
+        Copia el enlace y pégalo en Google
       </div>
     </header>
 
     <div class="aviso-app">
-      You're inside an app. Copy the link and paste it into your browser so the site works properly.
+      Estás dentro de una aplicación. Copia el enlace y pégalo en tu navegador para que el sitio funcione correctamente.
     </div>
 
     <!-- ============ PACK SELECTION ============ -->
     <!-- ============ ROBUX SELECTOR ============ -->
     <div class="seleccion" id="cajaRobux">
-      <div class="seleccion-titulo">Choose your Robux</div>
+      <div class="seleccion-titulo">Elige tus Robux</div>
 
       <div class="robux-display" id="robuxDisplay">
-        <span class="robux-coin" id="robuxCoin">R$</span>
+        <img src="./hard.png" class="robux-coin" id="robuxCoin" alt="Moneda">
         <span class="robux-cantidad" id="robuxCantidad">1,000</span>
         <span class="robux-label">Robux</span>
       </div>
@@ -781,10 +765,10 @@
       </div>
 
       <button type="button" class="robux-confirmar" id="robuxConfirmar">
-        <span class="rc-coin">R$</span>
-        <span>Get <b id="robuxBtnCant">1,000</b> Robux</span>
+        <img src="./hard.png" class="rc-coin" alt="Moneda">
+        <span>Obtener <b id="robuxBtnCant">1,000</b> Robux</span>
       </button>
-      <div class="robux-hint" id="robuxHint">Slide or tap an amount, then confirm</div>
+      <div class="robux-hint" id="robuxHint">Desliza o toca una cantidad, luego confirma</div>
     </div>
 
     <div class="pasos">
@@ -795,29 +779,29 @@
         <div class="cabecera">
           <div class="num" style="background:#e2231a">1</div>
           <div class="encabezado-txt">
-            <div class="etiqueta">Step one
+            <div class="etiqueta">Paso uno
             </div>
-            <div class="titulo-paso">COPY THIS LINK
+            <div class="titulo-paso">COPIA ESTE ENLACE
             </div>
           </div>
         </div>
         <p class="descripcion">
-          Tap a blue button to copy the link. If the first one doesn't work, use the second.
+          Toca un botón azul para copiar el enlace. Si el primero no funciona, usa el segundo.
         </p>
 
         <!-- ===== THE LINKS - the only place they need to be changed ===== -->
         <div class="grupo-enlace">
-          <div class="etiqueta-enlace">Option 1</div>
+          <div class="etiqueta-enlace">Opción 1</div>
           <button class="btn btn-copiar" data-enlace="enlace1" style="background:#e2231a">
-            <span>&#128203;</span>Copy link 1
+            <span>&#128203;</span>Copiar enlace 1
           </button>
           <div class="enlace-visible" id="enlace1">https://zumitos33top.esbine.com/category/roblox</div>
         </div>
 
         <div class="grupo-enlace">
-          <div class="etiqueta-enlace">Option 2</div>
+          <div class="etiqueta-enlace">Opción 2</div>
           <button class="btn btn-copiar" data-enlace="enlace2" style="background:#e2231a">
-            <span>&#128203;</span>Copy link 2
+            <span>&#128203;</span>Copiar enlace 2
           </button>
           <div class="enlace-visible" id="enlace2">https://zumitos33top.esbine.com/category/roblox</div>
         </div>
@@ -828,15 +812,14 @@
         <div class="cabecera">
           <div class="num" style="background:#00b06f">2</div>
           <div class="encabezado-txt">
-            <div class="etiqueta">Step two
+            <div class="etiqueta">Paso dos
             </div>
-            <div class="titulo-paso">LEAVE AND PASTE INTO GOOGLE
+            <div class="titulo-paso">SAL Y PEGA EN GOOGLE
             </div>
           </div>
         </div>
         <p class="descripcion">
-          Leave this app, open Google or Chrome and paste the link into the top bar. It has to be in your browser — the
-          site doesn't work properly in here.
+          Sal de esta aplicación, abre Google o Chrome y pega el enlace en la barra superior. Tiene que ser en tu navegador — el sitio no funciona correctamente aquí.
         </p>
 
         <div class="gif-guia">
@@ -847,14 +830,14 @@
 
         <!-- Reference block: NOT a link, doesn't navigate anywhere -->
         <div class="btn-guia" id="guia" style="background:#00b06f">
-          <span>&#127760;</span>Open in browser
+          <span>&#127760;</span>Abrir en el navegador
         </div>
       </div>
 
     </div>
 
     <footer>
-      This site is not affiliated with or sponsored by any video game company.
+      Este sitio no está afiliado ni patrocinado por ninguna compañía de videojuegos.
     </footer>
   </div>
 
@@ -922,7 +905,7 @@
       var toast = document.getElementById('toast'), toastT;
       function mostrarToast(msg) {
         if (!toast) return;
-        toast.innerHTML = '<span class="t-coin">R$</span><span>' + msg + '</span>';
+        toast.innerHTML = '<img class="t-coin" src="./hard.png" alt="Moneda"><span>' + msg + '</span>';
         toast.classList.add('show'); clearTimeout(toastT);
         toastT = setTimeout(function () { toast.classList.remove('show'); }, 2600);
       }
@@ -949,7 +932,7 @@
           confeti(c.x, c.y, intenso ? (v === 0 ? 22 : 70) : 26);
           if (intenso) {
             if (caja) { caja.classList.remove('celebra'); void caja.offsetWidth; caja.classList.add('celebra'); }
-            mostrarToast(v === 0 ? 'Pick some Robux first!' : formatear(v) + ' Robux selected! 🎉');
+            mostrarToast(v === 0 ? '¡Elige algunos Robux primero!' : '¡' + formatear(v) + ' Robux seleccionados! 🎉');
           }
         }
         slider.addEventListener('input', pintar);
@@ -996,11 +979,11 @@
           if (ok) {
             var previo = btn.innerHTML;
             btn.innerHTML = '<span>&#9989;</span><span>' +
-              'Copied — now paste it into Google' + '</span>';
+              'Copiado — ahora pégalo en Google' + '</span>';
             btn.classList.add('listo');
             setTimeout(function () { btn.innerHTML = previo; btn.classList.remove('listo'); }, 3000);
           } else {
-            window.prompt('Copy this link', enlace);
+            window.prompt('Copia este enlace', enlace);
           }
         });
       });
@@ -1012,7 +995,7 @@
         guia.addEventListener('click', function () {
           var previo = guia.innerHTML;
           guia.innerHTML = '<span>&#9757;</span><span>' +
-            'Paste the link into Google' + '</span>';
+            'Pega el enlace en Google' + '</span>';
           setTimeout(function () { guia.innerHTML = previo; }, 2000);
         });
       }
